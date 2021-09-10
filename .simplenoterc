@@ -1,0 +1,6 @@
+let g:SimplenoteUsername = ""
+let g:SimplenotePassword = ""
+let g:SimplenoteSingleWindow=1
+let g:SimplenoteVertical=1
+let g:SimplenoteListSize=30
+
