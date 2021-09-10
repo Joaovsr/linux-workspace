@@ -1,0 +1,9 @@
+1- Entrar com conta local e internet off.
+2- Fazer configurações de personalização. Dark theme. Desabilitar sons.
+3- Remover bloatware softwares. 
+4- Update drivers.
+5- Configurar navegadores.
+6- Instalar Microsoft .net 3.5.
+7- Ativar windows com chave de ativação.
+8- Fazer atualização necessárias.
+9- Configurar windows update.
