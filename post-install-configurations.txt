@@ -1,17 +1,30 @@
-1- Install i3 i3blocks i3-gaps i3lock i3status gdm xorg-server xorg sudo terminator dmenu rofi
+1- Install i3 i3blocks i3-gaps i3lock i3status gdm xorg-server xorg sudo terminator rofi(or dmenu)
 2- Edit the file /etc/sudoers/ joao(ALL)ALL= ALL
 3- Install firefox lxappereance zsh nitrogen arc-dark-theme blueman nemo alsa-utils networkmanager-applet deluge-gtk eom gnome-screenshot rhymthbox
 4- Restore backup of the folders .config/i3/config /i3blocks
 5- Restore backup of .zsh and install plugins
 6- Restore backup of .vimrc and install plugins
-7- Configure via lxappereance
-8- Downlaod and move .ttf of fonts. System San Francisco and Font-Awesome 
-9- Setting System San Francisco on .gtk-2.0 and .config/gtk-3.0/settings.init
-10- Download yay via aur and install (makepkg -si)
+7- Downlaod and move .ttf of fonts. System San Francisco and Font-Awesome
+	git clone https://github.com/supermarin/YosemiteSanFranciscoFont.git
+	cd YosemiteSanFranciscoFont	
+	mv *.ttf ~/.fonts/
+8- Setting System San Francisco on .gtk-2.0 and .config/gtk-3.0/settings.init
+	gtk-font-name="System San Francisco Display 11"
+	gtk-font-name=System San Francisco Display 11
+9- Configure via lxappereance
+10- Install yay - alternative to pacman 
+	git clone https://aur.archlinux.org/yay.git 
+	cd yay
+	makepkg -si
 11- Melhorar desempenho de memoria swap. 
 	sysctl vm.swappiness <-- verificar valor atula
 	sudo vim /etc/sysctl.d/99-swappiness.conf
 	vm.swappiness=10
 	vm.vfs_cache_pressure=50
-12- localectl set-x11-keymap br, thinkpadz60
-  
+12- Setting teclado.
+	localectl set-x11-keymap br, thinkpadz60
+13- Setting preload and gopreload.
+	yay -S preload gopreload
+	chown user:users /usr/share/gopreload/enabled /usr/share/gopreload/disabled
+	gopreload-prepare firefox 
+	systemctl enable preload gopreload
