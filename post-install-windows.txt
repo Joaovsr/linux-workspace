@@ -4,6 +4,6 @@
 4- Update drivers.
 5- Configurar navegadores.
 6- Instalar Microsoft .net 3.5.
-7- Ativar windows com chave de ativação.
+7- Ativação windows. (Original)
 8- Fazer atualização necessárias.
 9- Configurar windows update.
