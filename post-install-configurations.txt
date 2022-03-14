@@ -12,7 +12,7 @@
 
 4- Restore backup
 	git clone git@github.com:Joaovsr/linux-workspace.git
-4.1- Restore backup of the folders .config/i3/config /i3blocks
+4.1- Restore backup of the folders .config/i3/config .config/i3blocks
 4.2- Restore backup of .zsh and install plugins
 4.3- Restore backup of .vimrc and install plugins
 
