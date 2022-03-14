@@ -1,2 +1,2 @@
 # linux-workspace
-Linux workspace using i3 and gnome applications
+Linux workspace using the window manager i3wm.
