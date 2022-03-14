@@ -5,10 +5,10 @@
 	pacman -S sudo
 	vim /etc/sudoers > user(ALL)ALL= ALL	
 
-3- Install i3 i3blocks i3-gaps i3lock i3status gdm xorg-server xorg terminator rofi(or dmenu) firefox lxappereance zsh nitrogen arc-dark-theme blueman nemo alsa-utils networkmanager-applet deluge-gtk eom gnome-screenshot rhymthbox
+3- Install dependecies
 	su joao
 	pacman -Syyu
-	pacman -S i3 i3blocks i3-gaps i3lock i3status gdm xorg-server xorg sudo terminator rofi firefox lxappereance zsh nitrogen arc-dark-theme blueman nemo alsa-utils networkmanager-applet deluge-gtk eom gnome-screenshot rhymthbox
+	pacman -S i3 i3blocks i3-gaps i3lock i3status gdm xorg-server xorg terminator rofi firefox lxappereance zsh nitrogen arc-gtk-theme blueman nemo alsa-utils networkmanager-applet deluge-gtk eom gnome-screenshot rhymthbox
 
 4- Restore backup
 	git clone git@github.com:Joaovsr/linux-workspace.git
