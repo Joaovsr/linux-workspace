@@ -1,0 +1,20 @@
+!DESKTOP
+! hide feed 
+www.youtube.com##.ytd-two-column-browse-results-renderer.style-scope > .ytd-rich-grid-renderer.style-scope 
+! hide side bar 
+www.youtube.com###related 
+! hide endscreen 
+www.youtube.com##.ytp-endscreen-content 
+! hide next button 
+www.youtube.com##.ytp-button.ytp-next-button 
+! hide notification bell 
+www.youtube.com##.notification-button-style-type-default.ytd-notification-topbar-button-renderer.style-scope 
+
+!MOBILE (firefox with add-on ublock origin)
+!hide feed
+m.youtube.com##.rich-grid-renderer-contents
+m.youtube.com##.chip-bar-contents
+! hide trending 
+m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
+! hide side bar 
+m.youtube.com##.big-thumbnail-experiment.watch-content > .scwnr-content > lazy-list
