@@ -5,10 +5,8 @@ www.youtube.com##.ytd-two-column-browse-results-renderer.style-scope > .ytd-rich
 www.youtube.com###related 
 ! hide endscreen 
 www.youtube.com##.ytp-endscreen-content 
-! hide next button 
-www.youtube.com##.ytp-button.ytp-next-button 
 ! hide notification bell 
-www.youtube.com##.notification-button-style-type-default.ytd-notification-topbar-button-renderer.style-scope 
+www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope
 
 !MOBILE (firefox with add-on ublock origin)
 !hide feed
