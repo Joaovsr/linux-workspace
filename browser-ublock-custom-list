@@ -8,6 +8,7 @@ www.youtube.com##.ytp-endscreen-content
 ! hide notification bell 
 www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope
 
+
 !MOBILE (firefox with add-on ublock origin)
 !hide feed
 m.youtube.com##.rich-grid-renderer-contents
@@ -16,3 +17,7 @@ m.youtube.com##.chip-bar-contents
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 ! hide side bar 
 m.youtube.com##.big-thumbnail-experiment.watch-content > .scwnr-content > lazy-list
+
+!BLOCK SHORTS
+www.youtube.com###shorts-container
+m.youtube.com##shorts-video
