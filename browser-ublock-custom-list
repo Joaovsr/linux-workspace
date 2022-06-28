@@ -17,7 +17,12 @@ m.youtube.com##.chip-bar-contents
 m.youtube.com##ytm-pivot-bar-item-renderer:nth-of-type(2)
 ! hide side bar 
 m.youtube.com##.big-thumbnail-experiment.watch-content > .scwnr-content > lazy-list
+m.youtube.com##.watch-content > .scwnr-content
+
 
 !BLOCK SHORTS
 www.youtube.com###shorts-container
 m.youtube.com##shorts-video
+
+
+
