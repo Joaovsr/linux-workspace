@@ -6,7 +6,7 @@ www.youtube.com###related
 ! hide endscreen 
 www.youtube.com##.ytp-endscreen-content 
 ! hide notification bell 
-www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope
+! www.youtube.com##ytd-notification-topbar-button-renderer.ytd-masthead.style-scope
 
 
 !MOBILE (firefox with add-on ublock origin)
