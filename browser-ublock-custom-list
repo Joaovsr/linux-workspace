@@ -1,6 +1,6 @@
 !DESKTOP
 ! hide feed 
-www.youtube.com##.ytd-two-column-browse-results-renderer.style-scope > .ytd-rich-grid-renderer.style-scope 
+www.youtube.com##.grid-disabled.ytd-browse.style-scope
 ! hide side bar 
 www.youtube.com###related 
 ! hide endscreen 
