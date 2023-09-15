@@ -1,31 +1,25 @@
 !DESKTOP
 ! hide feed 
 www.youtube.com##.grid-disabled.ytd-browse.style-scope
-
 ! hide side bar 
 www.youtube.com###related
-
 ! hide endscreen
 www.youtube.com##.ytp-endscreen-content 
-
 ! hide notification bell 
 youtube.com##ytd-notification-topbar-button-renderer
-
 ! Hide invasive recomendations
 youtube.com##ytd-reel-shelf-renderer
 youtube.com##ytd-shelf-renderer
 youtube.com##ytd-rich-shelf-renderer
 youtube.com##ytd-reel-video-renderer:not([is-active])
-
-
-! Hide button to the black hool
+! Hide blackhole button
 youtube.com##[title="Shorts"]
-
 ! Hide button subscritions
 ! youtube.com##[href="/feed/subscriptions"]
 
 
-! mobile brave brave:ads or firefox with ublock
+! mobile
+! Use brave:\\adblock or firefox with ublock
 ! hide invasive recomendations
 m.youtube.com##ytm-video-with-context-renderer:has(ytm-badge)
 m.youtube.com##ytm-reel-shelf-renderer
@@ -33,7 +27,7 @@ m.youtube.com##ytm-reel-shelf-renderer
 m.youtube.com##ytm-item-section-renderer[section-identifier="related-items"]
 ! hide feed
 m.youtube.com##ytm-rich-grid-renderer
-! block button to the blackhole
+! hide button blackhole
 m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
 ! block invasive end scrooling reels
 m.youtube.com##shorts-carousel div[aria-hidden="true"]
