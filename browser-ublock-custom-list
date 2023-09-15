@@ -1,6 +1,6 @@
 !DESKTOP
 ! hide feed 
-www.youtube.com##.grid-disabled.ytd-browse.style-scope
+youtube.com##ytd-browse[page-subtype="home"] #contents
 ! hide side bar 
 www.youtube.com###related
 ! hide endscreen
@@ -20,16 +20,19 @@ youtube.com##[title="Shorts"]
 
 ! mobile
 ! Use brave:\\adblock or firefox with ublock
+! hide feed
+youtube.com##ytm-rich-grid-renderer:has(.rich-grid-sticky-header)
 ! hide invasive recomendations
 m.youtube.com##ytm-video-with-context-renderer:has(ytm-badge)
 m.youtube.com##ytm-reel-shelf-renderer
 ! hide recomendations 
 m.youtube.com##ytm-item-section-renderer[section-identifier="related-items"]
-! hide feed
-m.youtube.com##ytm-rich-grid-renderer
+
 ! hide button blackhole
 m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
 ! block invasive end scrooling reels
 m.youtube.com##shorts-carousel div[aria-hidden="true"]
+
+
 
 
