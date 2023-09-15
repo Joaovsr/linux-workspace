@@ -33,4 +33,9 @@ m.youtube.com##ytm-reel-shelf-renderer
 m.youtube.com##ytm-item-section-renderer[section-identifier="related-items"]
 ! hide feed
 m.youtube.com##ytm-rich-grid-renderer
+! block button to the blackhole
+m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
+! block invasive end scrooling reels
+m.youtube.com##shorts-carousel div[aria-hidden="true"]
+
 
