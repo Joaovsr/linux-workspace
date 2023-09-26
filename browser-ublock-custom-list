@@ -1,6 +1,6 @@
 !DESKTOP
 ! hide feed 
-youtube.com##ytd-browse[page-subtype="home"] #contents
+youtube.com##ytd-browse[page-subtype="home"]
 ! hide side bar 
 www.youtube.com###related
 ! hide endscreen
@@ -32,7 +32,4 @@ m.youtube.com##ytm-item-section-renderer[section-identifier="related-items"]
 m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
 ! block invasive end scrooling reels
 m.youtube.com##shorts-carousel div[aria-hidden="true"]
-
-
-
 
