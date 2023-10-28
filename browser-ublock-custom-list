@@ -37,14 +37,14 @@ m.youtube.com##shorts-carousel div[aria-hidden="true"]
 ! mobile
 ! Use brave:\\adblock or firefox with ublock
 ! hide feed
-##ytm-rich-grid-renderer:has(.rich-grid-sticky-header)
+##ytm-rich-grid-renderer:-abp-has(.rich-grid-sticky-header)
 ! hide invasive recomendations
-##ytm-video-with-context-renderer:has(.metadata-badge)
+##ytm-video-with-context-renderer:-abp-has(.metadata-badge)
 ##ytm-reel-shelf-renderer
 ! hide recomendations 
 ##ytm-item-section-renderer[section-identifier="related-items"]
 
 ! hide button blackhole
-##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
+##ytm-pivot-bar-item-renderer:-abp-has(.pivot-shorts)
 
 
