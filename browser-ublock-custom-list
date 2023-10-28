@@ -33,3 +33,18 @@ m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
 ! block invasive end scrooling reels
 m.youtube.com##shorts-carousel div[aria-hidden="true"]
 
+
+! mobile
+! Use brave:\\adblock or firefox with ublock
+! hide feed
+##ytm-rich-grid-renderer:has(.rich-grid-sticky-header)
+! hide invasive recomendations
+##ytm-video-with-context-renderer:has(.metadata-badge)
+##ytm-reel-shelf-renderer
+! hide recomendations 
+##ytm-item-section-renderer[section-identifier="related-items"]
+
+! hide button blackhole
+##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
+
+
