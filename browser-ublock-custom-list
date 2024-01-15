@@ -1,25 +1,25 @@
-!DESKTOP
+! YOUTUBE RULES
 ! hide feed 
 youtube.com##ytd-browse[page-subtype="home"]
-! hide side bar 
+! Hide invasive recomendations
+youtube.com##ytd-shelf-renderer
+youtube.com##ytd-rich-shelf-renderer
+! hide Recomendations right bar
 www.youtube.com###related
 ! hide endscreen
 www.youtube.com##.ytp-endscreen-content 
 ! hide notification bell 
 youtube.com##ytd-notification-topbar-button-renderer
-! Hide invasive recomendations
-youtube.com##ytd-reel-shelf-renderer
-youtube.com##ytd-shelf-renderer
-youtube.com##ytd-rich-shelf-renderer
-youtube.com##ytd-reel-video-renderer:not([is-active])
-! Hide blackhole button
+! Hide Shorts
 youtube.com##[title="Shorts"]
+! Hide Scrolling shorts
+youtube.com##ytd-reel-video-renderer:not([is-active])
+! Hide recomendations shorts
+youtube.com##ytd-reel-shelf-renderer
 ! Hide button subscritions
 ! youtube.com##[href="/feed/subscriptions"]
 
-
-! mobile
-! Use brave:\\adblock or firefox with ublock
+! YOUTUBE MOBILE (TIP: Use brave:\\adblock or firefox with ublock)
 ! hide feed
 youtube.com##ytm-rich-grid-renderer:has(.rich-grid-sticky-header)
 ! hide invasive recomendations
@@ -27,24 +27,60 @@ m.youtube.com##ytm-video-with-context-renderer:has(ytm-badge)
 m.youtube.com##ytm-reel-shelf-renderer
 ! hide recomendations 
 m.youtube.com##ytm-item-section-renderer[section-identifier="related-items"]
-
-! hide button blackhole
+! hide Reels
 m.youtube.com##ytm-pivot-bar-item-renderer:has(.pivot-shorts)
-! block invasive end scrooling reels
+! block scrolling shorts
 m.youtube.com##shorts-carousel div[aria-hidden="true"]
 
+! INSTAGRAM
+! Hide Feed
+instagram.com##div[class= 'xw7yly9']
+! Hide Stories
+!instagram.com##div[class= 'xmnaoh6']
+! Hide Suggest accounts
+instagram.com##div[class='_aak3 _agh4']
+! Hide Suggest posts
+!instagram.com##div[class= '_aalg']
+!instagram.com##article:has(div.x1yc6y37)
+! Hide Reels
+instagram.com##a[href="/reels/"]
+instagram.com##div[class="x1pq812k xvbhtw8 x9f619 x1dr59a3 x1odjw0f x1miatn0 x1rohswg x1p6e16i x168l2et xfk6m8 x1yqm8si xjx87ck"]
+! Hide explore
+instagram.com##a[href="/explore/"]
+instagram.com##div[class="x78zum5 xdt5ytf x1iyjqo2 xdj266r xkrivgy x4n8cb0 x1gryazu x1fawyso xh8yej3 x19b80pe xhae0no xmjrnx3 x16mfq2j x1e49onv x7flfwp x1ugxg0y x1oqrbt2 xgzdhx4"]
 
-! mobile
-! Use brave:\\adblock or firefox with ublock
-! hide feed
-##ytm-rich-grid-renderer:-abp-has(.rich-grid-sticky-header)
-! hide invasive recomendations
-##ytm-video-with-context-renderer:-abp-has(.metadata-badge)
-##ytm-reel-shelf-renderer
-! hide recomendations 
-##ytm-item-section-renderer[section-identifier="related-items"]
+! FACEBOOK
+! Hide Stories
+facebook.com##div[aria-label="Stories"]
+! Hide posts
+facebook.com##div[class='x1hc1fzr x1unhpq9 x6o7n8i']
+! Hide Shortcuts
+facebook.com##div[class="x1iyjqo2"]>div:nth-of-type(2)
+! Hide Reels
+facebook.com##a[href^="/reel/"]
+! Hide Watch
+facebook.com##a[href="https://www.facebook.com/watch/"]
+facebook.com##a[href="/watch/?ref=tab"]
+facebook.com##a[href^="/watch/"]
+! Hide Watch Page
+facebook.com###watch_feed
+! Hide Notification Bell
+facebook.com##a[href="/notifications/"]
 
-! hide button blackhole
-##ytm-pivot-bar-item-renderer:-abp-has(.pivot-shorts)
+! REDDIT
+! hide only initial feed
+reddit.com##div[class='_31N0dvxfpsO6Ur5AKx4O5d']:has(div[data-testid="frontpage-sidebar"])
+! hide side bar search
+! reddit.com##div[data-testid="search-results-sidebar"]
+! hide popular topics on results
+reddit.com##div[class="_3LzqitwwvqMy0VShIuQwvX _37mWd5gyv2BM4g00nmlZuD _3C9CntSKG4Z9k6ul3_ugNH _2NH7qxA8P_UowZKF4-LUNe"]
+reddit.com##a[class='_20OHBqoDD71_8fv7tuG6u6 _2TJNEv970Kn5chU69vgAB4 _1H3lgd1i4NTn9aM5VR9BQX']
 
+! TWITTER
+! Hide home feed
+twitter.com##div[aria-label="Home timeline"]:has(div[class='css-175oi2r r-kemksi r-1h8ys4a'])
+
+! TWITCH
+! hide side bar recommend channels
+twitch.tv##div[data-test-selector="side-nav"]
 
